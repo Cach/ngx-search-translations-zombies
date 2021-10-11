@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import fs from 'fs';
 import { Config, TranslationExclude } from './types';
 import { readFiles, readJsonFile, writeOutputFile } from './utils/filesystem.utils';
