@@ -47,7 +47,9 @@ export const writeOutputFile = (filename: string, data: string[]): void => {
   const content = data.join('\n');
 
   try {
-    fs.writeFileSync(filename, content)
+    fs.writeFileSync(filename, content);
+
+    console.log(`Result was written to ${ filename }`);
   } catch (err) {
     console.error(err)
   }
