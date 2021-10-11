@@ -11,24 +11,30 @@ The library for searching a zombies translations
 $ npm install ngx-search-translations-zombies --save-dev
 ```
 
- - create config file
+ - create config file (JSON format):
 
 ```bash
 $ touch .zombiesconfig
 ```
 
- - add command to package.json (JSON format):
+## Usage
+
+- add command to package.json:
 
 ```bash
 "scripts": {
-    "zombies": "node /node_modules/ngx-search-translations-zombies/build/"
+    "zombies": "npx ngx-search-translations-zombies"
 }
 ```
 
-## Usage
-
 ```bash
 npm run zombies
+```
+
+- or just
+
+```bash
+npx ngx-search-translations-zombies
 ```
 
 ## Configuration
