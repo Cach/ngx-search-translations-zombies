@@ -49,6 +49,7 @@ const writeOutputFile = (filename, data) => {
     const content = data.join('\n');
     try {
         fs_1.default.writeFileSync(filename, content);
+        console.log(`Result was written to ${filename}`);
     }
     catch (err) {
         console.error(err);
